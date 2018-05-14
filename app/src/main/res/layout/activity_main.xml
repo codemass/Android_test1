@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ru.vvg.test1.MainActivity"
@@ -13,20 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
         android:layout_marginTop="48dp"
-        android:backgroundTint="#3e5995"
+        android:background="@color/colorAccent"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="191dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="289dp"
-        android:layout_marginEnd="66dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <Switch
         android:id="@+id/switch1"
@@ -37,5 +28,33 @@
         android:text="Переключатель"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="148dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maxresdefa2222ult" />
+
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="80dp"
+        android:maxHeight="10dp"
+        android:minHeight="10dp"
+        android:padding="0dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar"
+        android:thumb="@drawable/seekbar_tracker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:progress="10" />
 
 </android.support.constraint.ConstraintLayout>
